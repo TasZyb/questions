@@ -12,7 +12,6 @@ export function Tabs({ option, setAnswers, currentQuestion, answers, setCurrentQ
             setQuizCompleted(true);
         }
     };
-
     return (
         <div className="tabs">
             {option.options.map((quest, index) => (
@@ -110,11 +109,11 @@ export function Form({ answers, setQuizCompleted, setAnswers }) {
 
 export default function QestionBar() {
     const questions = [
-        { question: "Що таке React?", options: ["Бібліотека", "Фреймворк"] },
-        { question: "Що таке JSX?", options: ["Розширення JS", "Мова програмування"] },
-        { question: "useState – це?", options: ["Хук", "Компонент"] },
-        { question: "Що таке props?", options: ["Аргументи", "Функції"] },
-        { question: "Що робить useEffect?", options: ["Побічні ефекти", "Рендеринг"] },
+        { question: "Що таке React?", options: ["Бібліотека", "Фреймворк", "Технологія"] },
+        { question: "Що таке JSX?", options: ["Розширення JS", "Мова програмування", "Синтаксиз HTML"] },
+        { question: "useState – це?", options: ["Хук", "Компонент", "Функція"] },
+        { question: "Що таке props?", options: ["Аргументи", "Функції", "Метод"] },
+        { question: "Що робить useEffect?", options: ["Побічні ефекти", "Рендеринг", "Опрацювувач подій"] },
     ];
 
     const [answers, setAnswers] = useState([]);
