@@ -15,11 +15,10 @@ html{
   overflow-x: hidden;
 }
 
-.wrapper {
+.App {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
@@ -41,6 +40,7 @@ html{
 .wrapper__main{
   z-index: 20;
   width: 500px;
+  padding: 20px 100px;
 }
 
 .tabs{
@@ -173,4 +173,38 @@ html{
   .modal__body{
       padding: 20px;
   }
+  .wrapper__main{
+    z-index: 20;
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (height<500px) {
+
+  .modal__body input {
+    width: 100%;
+    padding: 10px 5px;
+    
+}
+.modal__body button {
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+  .modal__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c5c5c5;
+    padding: 20px 40px;
+    gap: 10px;
+    border-radius: 20px;
+  }
+  .modal__body h2 {
+    margin: 10px 0;
+}
+  
 }
